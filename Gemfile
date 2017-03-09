@@ -17,6 +17,7 @@ gem "devise-i18n-views"
 gem "bootstrap-sass", "~> 3.3.6"
 gem "slim-rails"
 gem "bootswatch-rails"
+gem 'sqlite3'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
