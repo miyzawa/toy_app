@@ -3,10 +3,4 @@
   <% @project.tasks.each do |t| %>
     <li><%= t.title %></li>
   <% end %>
-  <li>
-    <%= form_for [:project, @task] do |f| %>
-      <%= f.text_field :title%>
-      <%= f.submit %>
-    <% end %>
-  </li>
 </ul>
