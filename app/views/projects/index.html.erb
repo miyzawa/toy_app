@@ -1,0 +1,12 @@
+<h1>Project</h1>
+<ul>
+  <p>今のぷろじぇくっとの数は<%= @projects.count %>個だお</p>
+  <% @projects.each do |p|%>
+    <li>
+      <%= link_to p.title, project_path(p.id) %>
+      <%= link_to "[編集]", edit_project_path(p.id)%>
+      <%= link_to "[削除]", project_path(p.id), method: :delete, data: {confirm: "本当に削除しますか？"}%>
+    </li>
+  <% end %>
+</ul>
+<p><%= link_to "プロジェクトを追加する", new_project_path %></p>
